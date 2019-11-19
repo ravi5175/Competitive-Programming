@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<stdlib.h>
+void Reversal(NODE **start)
+{
+	NODE *prev=NULL,*ptr=NULL,*fwd=*start;
+	
+	if (fwd==NULL)
+	{
+		printf("LIST is empty ,Reversal Not Possible");
+	}
+	while(fwd->link!=NULL)
+	{
+		fwd=fwd->link;
+		ptr->link=prev;
+		prev=ptr;
+		ptr=fwd;
+		
+	}
+	*start=ptr;
+	free(fwd);
+	free(prev);
+	free(ptr);
+	
+}

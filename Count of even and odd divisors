@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main(){
+    cin>>n;
+    if((n%2==0) && (n%4!=0)){
+    //A no. has power of 2 as 1 if it is only divisible by 2 and not with its power.
+        cout<<"YES\n";
+    }
+    else{
+        cout<<"NO\n";
+    }
+    return 0;
+}
